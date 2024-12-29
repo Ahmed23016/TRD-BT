@@ -47,7 +47,7 @@ def backtest_strategy(df,ticker):
 
             print(f"Bought at {buy_price} ")
         if position == 1 and (niga- buy_price) * stok >20:
-            balance += (niga - buy_price )* stok -7
+            balance += (niga - buy_price )* stok -5
             position = 0
             print(f"Sold {stok} shares ")
             print(f"Sold at {niga} . Balance: {balance}")
